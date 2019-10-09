@@ -1,0 +1,2 @@
+TRUNCATE folders CASCADE;
+TRUNCATE notes;
