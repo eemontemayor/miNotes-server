@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eemontemayor/noteful-server"
+    "url": "git+https://github.com/eemontemayor/miNotes-server"
   },
   "keywords": [],
   "engines": {
@@ -23,9 +23,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eemontemayor/noteful-server"
+    "url": "https://github.com/eemontemayor/miNotes-server"
   },
-  "homepage": "https://github.com/eemontemayor/noteful-server#readme",
+  "homepage": "https://github.com/eemontemayor/miNotes-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
