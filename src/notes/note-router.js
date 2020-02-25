@@ -10,7 +10,8 @@ const serializeNote = note => ({
   note_id: note.note_id,
   note_name: note.note_name,
   folderid: note.folderid,
-  content: note.content
+  content: note.content,
+  modified:note.modified
 });
 
 
@@ -26,8 +27,8 @@ NoteRouter
   
   })
   .post(bodyParser, (req, res, next) => {
-    const {note_id, note_name, folderid, content}= req.body;
-    const newNote = {note_id, note_name, folderid, content};
+    const {note_id, note_name, folderid, content, modified}= req.body;
+    const newNote = {note_id, note_name, folderid, content, modified};
     NoteService.insertNote( req.app.get('db'), newNote)
       .then(note => {
         return res.json(serializeNote(note));
